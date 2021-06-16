@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icone.png" type="imagem/png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btnAbrir" onclick="abrirMenu()">&#9776; Abrir</a>
+    </header>
+    <nav id="menuLateral">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="estrutura.html">Estrtura do Site</a>
+        <a href="desenvolvedores.html">Quem Somos?</a>
+    </nav>
+    <main id="conteudo">
+        <h1>Introdução</h1>
+
+        <p>O projeto será criar um sebo virtual que auxilie na aquisição de livros.
+             A idéia inicial foi pensada com base na situação atual. 
+             As pessoas não podem sair de suas casas por quaisquer motivos, devido a pandemia.
+             Por isso, este sebo será um ótimo auxilio para a atual realidade. </p>
+    </main>
+    <script>
+        function abrirMenu(){
+            document.getElementById('menuLateral').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px'
+        }
+        function fecharMenu() {
+            document.getElementById('menuLateral').style.width = '0px'
+            document.getElementById('conteudo').style.marginLeft = '0px'
+        }
+    </script>
+</body>
+</html>

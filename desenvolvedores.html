@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icone.png" type="imagem/png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btnAbrir" onclick="abrirMenu()">&#9776; Abrir</a>
+    </header>
+    <nav id="menuLateral">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="estrutura.html">Estrtura do Site</a>
+        <a href="desenvolvedores.html">Quem Somos?</a>
+    </nav>
+    <main id="conteudo">
+        <h1>Quem somos nós?</h1>
+        </main>
+    <script>
+        function abrirMenu(){
+            document.getElementById('menuLateral').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px'
+        }
+        function fecharMenu() {
+            document.getElementById('menuLateral').style.width = '0px'
+            document.getElementById('conteudo').style.marginLeft = '0px'
+        }
+    </script>
+</body>
+</html>
